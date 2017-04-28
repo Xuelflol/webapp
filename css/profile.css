@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    background-image: url(/images/Hoth_plains.jpg);
+}
+
+#navigation {
+    background-color: #0ABAB5;
+    z-index: 1;
+}
+
+#menu_stuff {
+    vertical-align: center;
+    line-height: 10vh;
+}
+
+.menu {
+    font-size: 130%;
+    text-align: center;
+    color: #F0F8FF;
+}
+
+.menu:hover {
+    border-bottom: 0.5vh solid #333333;
+    vertical-align: center;
+    line-height: 9.5vh;
+}
+
+#profile {
+    color: #333333;
+}
+
+#logo {
+    height: 6vh;
+    background-image: url(/images/Rebel-48.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+#title {
+    height: 4vh;
+    text-align: center;
+    font-size: 150%;
+    color: #DD1D22;
+    vertical-align: center;
+    line-height: 4vh;
+    font-weight: bolder;
+}
+
+#logout {
+    color: #F0F8FF;
+    background-color: #333333;
+    border: 2px solid #333333;
+    height: 3.5vh;
+    font-size: 130%;
+    width: 7vw;
+}
+
+#logout:hover {
+    background-color: black;
+    border: 2px solid black;
+}
+
+#options {
+    background-color: rgba(10,186,181,0.5);
+    border: 2px solid #DD1D22;
+    margin-top: 5vh;
+    height: 80vh;
+}
+
+.form {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.inputs {
+    width: 50%;
+    height: 4vh;
+    background-color: #2F8DB3;
+    color: #FDF8FF;
+    border: 1px solid #2F8DB3;
+}
+
+.inputs:hover {
+    background-color: #2257BF;
+    border: 1px solid #2257BF;
+}
+
+.buttons {
+    height: 4vh;
+    width: 12%;
+    background-color: #333333;
+    color: #FDF8FF;
+    border: 1px solid #333333;
+}
+
+.buttons:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+#history {
+    height: 65vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    padding-top: 40px;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    border: 1px solid black;
+    background: rgb(41,41,41);
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    height: 30px;
+    width: 8px;
+    border: 1px solid black;
+    background: rgb(111,111,111);
+    -webkit-box-shadow: 0 1px 1px rgb(0,0,0);
+    background: -webkit-linear-gradient(rgb(200,200,200), rgb(150,150,150));
+}
+
+::-webkit-scrollbar-track-piece {
+    height: 30px;
+    width: 30px;
+}
