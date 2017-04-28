@@ -8,6 +8,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="/css/profile.css"/>
+        <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
         
     </head>
     
@@ -32,16 +33,17 @@
             
             <div id="options" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <form class="form" action="/somewhere" type="post">
-                    <input type="email" placeholder="EMAIL" name="email">
-                    <input type="submit" value="CHANGE">
+                    <input type="email" placeholder="EMAIL" name="email" class="inputs">
+                    <input type="submit" value="CHANGE" class="buttons">
                 </form>
                 
                 <form class="form" action="/somewhere" type="post">
-                    <input type="password" placeholder="PASSWORD" name="password">
-                    <input type="submit" value="CHANGE">
+                    <input type="password" placeholder="PASSWORD" name="password" class="inputs">
+                    <input type="submit" value="CHANGE" class="buttons">
                 </form>
                 
-                <div id="history"></div>
+                <div id="history">
+                </div>
             </div>
         </div>
     </body>

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url();
+    background-image: url(/images/Hoth_plains.jpg);
 }
 
 #navigation {
@@ -54,7 +54,6 @@ body {
     border: 2px solid #333333;
     height: 3.5vh;
     font-size: 130%;
-    border-radius: 20%;
     width: 7vw;
 }
 
@@ -68,64 +67,175 @@ body {
     height: 88vh;
     border: 2px solid #333333;
     margin-top: 1vh;
+    text-align: center;
 }
 
 #display {
     background-color: rgba(10,186,181,0.5);
     border: 2px solid #DD1D22;
-    border-radius: 15%;
-    margin-top: 5vh;
-    height: 80vh;
-    overflow-y: scroll;
+    margin-top: 1vh;
+    height: 88vh;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
-#display::-webkit-scrollbar {
-    background-color: aqua;
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    padding-top: 40px;
 }
 
-#display::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    border: 1px solid black;
+    background: rgb(41,41,41);
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    height: 30px;
+    width: 8px;
+    border: 1px solid black;
+    background: rgb(111,111,111);
+    -webkit-box-shadow: 0 1px 1px rgb(0,0,0);
+    background: -webkit-linear-gradient(rgb(200,200,200), rgb(150,150,150));
 }
 
-#display::-webkit-scrollbar-track-piece {
-    
-}
-
-#display::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
-}
-
-#display::-webkit-scrollbar-corner {
-    display: none;
+::-webkit-scrollbar-track-piece {
+    height: 30px;
+    width: 30px;
 }
 
 .inside {
     height: auto;
+    text-align: center;
 }
 
 .pic {
-    background-color: antiquewhite;
-    height: 15vh;
+    background-image: url(/images/Rebel-50.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 20vh;
 }
 
 .desc {
-    
+    font-size: 120%;
+    font-weight: bold;
 }
 
 .price {
-    
+    font-size: 130%;
+    font-weight: bolder;
+    color: #111111;
 }
 
 .form {
-    
+    text-align: center;
 }
 
 .qty {
-    
+    background-color: #2F8DB3;
+    border: 1px solid #2F8DB3;
+    margin: 0 15px;
+    width: 20%;
+}
+
+.qty:hover {
+    background-color: #2257BF;
+    border: 1px solid #2257BF;
 }
 
 .add {
-    
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FDF8FF;
+    margin: auto;
+    width: 25%;
+}
+
+.add:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.item {
+    margin: 10px 0;
+    height: 7vh;
+}
+
+.delete {
+    background-image: url(/images/button_cancel_256.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4vh;
+    width: 4vh;
+}
+
+.delete:hover {
+    transform: scale(0.7);
+}
+
+.text {
+    height: 4vh;
+    text-overflow: ellipsis;
+    font-size: 130%;
+    vertical-align: center;
+    line-height: 4vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.price2 {
+    height: 4vh;
+    text-align: center;
+    font-size: 130%;
+    vertical-align: center;
+    line-height: 4vh;
+}
+
+#items {
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.qty2 {
+    background-color: #2F8DB3;
+    border: 1px solid #2F8DB3;
+    margin: 5px 15px;
+    width: 40%;
+}
+
+.qty2:hover {
+    background-color: #2257BF;
+    border: 1px solid #2257BF;
+}
+
+.add2 {
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FDF8FF;
+    margin: 5px auto;
+    width: 40%;
+}
+
+.add2:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+#checkout {
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FDF8FF;
+    margin: 20px auto;
+    width: 40%;
+}
+
+#checkout:hover {
+    background-color: black;
+    border: 1px solid black;
 }

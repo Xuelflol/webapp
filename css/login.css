@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-image: url(/images/rendition1.img.jpg);
 }
 
 #register {
@@ -9,10 +10,13 @@ body {
 }
 
 #holder {
-    height: 100vh;
+    margin-top: 10vh;
+    height: 80vh;
     width: 80%;
-    margin: auto;
-    background-color: aquamarine;
+    margin: 10vh auto;
+    background-color: rgba(10,186,181,0.5);
+    border: 2px solid #DD1D22;
+    border-radius: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,4 +25,45 @@ body {
 #sign_in {
     margin: 0 auto;
     width: 50%;
+    text-align: center;
+}
+
+.inputs {
+    margin: 15px;
+    height: 4vh;
+    background-color: #2F8DB3;
+    color: #FDF8FF;
+    border: 1px solid #2F8DB3;
+}
+
+.inputs:hover {
+    background-color: #2257BF;
+    border: 1px solid #2257BF;
+}
+
+.buttons {
+    height: 4vh;
+    width: 15%;
+    background-color: #333333;
+    color: #FDF8FF;
+    border: 1px solid #333333;
+    margin: 0 auto;
+}
+
+.buttons:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.get {
+    text-align: center;
+    color: #DD1D22;
+    font-weight: bolder;
+    font-size: 150%;
+    margin: 15px auto;
+    width: 35%;
+}
+
+.get:hover {
+    color: #f8c899;
 }

@@ -8,6 +8,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="/css/login.css"/>
+        <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
         
     </head>
     
@@ -15,19 +16,23 @@
         <div id="holder">
             <div id="sign_in" class="container-fluid">
                 <form class="form" action="/somewhere" type="post">
-                    <input type="password" placeholder="PASSWORD" name="password" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <input type="email" placeholder="EMAIL" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <input type="submit" value="SIGN IN">
+                    <input type="password" placeholder="PASSWORD" name="password" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs">
+                    <input type="email" placeholder="EMAIL" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs">
+                    <input type="submit" value="SIGN IN"  class="buttons">
                 </form>
+                
+                <div id="get_register" class="get">Don't have an account?</div>
             </div>
 
             <div id="register" class="container-fluid">
                 <form class="form" action="/somewhere" type="post">
-                    <input type="password" placeholder="PASSWORD" name="password" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <input type="email" placeholder="EMAIL" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <input type="text" placeholder="NAME" name="name" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <input type="submit" value="CHANGE">
+                    <input type="password" placeholder="PASSWORD" name="password" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs">
+                    <input type="email" placeholder="EMAIL" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs">
+                    <input type="text" placeholder="NAME" name="name" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs">
+                    <input type="submit" value="CHANGE"  class="buttons">
                 </form>
+                
+                <div id="get_sign_in" class="get">Have an account?</div>
             </div>
         </div>
     </body>
