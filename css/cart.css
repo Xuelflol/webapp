@@ -1,0 +1,79 @@
+.item {
+    margin: 10px 0;
+    height: 7vh;
+}
+
+.delete {
+    background-image: url(/images/button_cancel_256.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4vh;
+    width: 4vh;
+}
+
+.delete:hover {
+    transform: scale(0.7);
+}
+
+.text {
+    height: 4vh;
+    text-overflow: ellipsis;
+    font-size: 130%;
+    vertical-align: center;
+    line-height: 4vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.price2 {
+    height: 4vh;
+    text-align: center;
+    font-size: 130%;
+    vertical-align: center;
+    line-height: 4vh;
+}
+
+#items {
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.qty2 {
+    background-color: #2F8DB3;
+    border: 1px solid #2F8DB3;
+    margin: 5px 15px;
+    width: 40%;
+}
+
+.qty2:hover {
+    background-color: #2257BF;
+    border: 1px solid #2257BF;
+}
+
+.add2 {
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FDF8FF;
+    margin: 5px auto;
+    width: 40%;
+}
+
+.add2:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
+#checkout {
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FDF8FF;
+    margin: 20px auto;
+    width: 40%;
+}
+
+#checkout:hover {
+    background-color: black;
+    border: 1px solid black;
+}

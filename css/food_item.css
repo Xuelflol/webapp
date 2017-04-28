@@ -1,0 +1,52 @@
+.inside {
+    height: auto;
+    text-align: center;
+}
+
+.pic {
+    background-image: url(/images/Rebel-50.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 20vh;
+}
+
+.desc {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 130%;
+    font-weight: bolder;
+    color: #111111;
+}
+
+.form {
+    text-align: center;
+}
+
+.qty {
+    background-color: #2F8DB3;
+    border: 1px solid #2F8DB3;
+    margin: 0 15px;
+    width: 20%;
+}
+
+.qty:hover {
+    background-color: #2257BF;
+    border: 1px solid #2257BF;
+}
+
+.add {
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #FDF8FF;
+    margin: auto;
+    width: 25%;
+}
+
+.add:hover {
+    background-color: black;
+    border: 1px solid black;
+}
