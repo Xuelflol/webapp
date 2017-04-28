@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background-image: url();
+}
+
+#navigation {
+    background-color: #0ABAB5;
+    z-index: 1;
+}
+
+#menu_stuff {
+    vertical-align: center;
+    line-height: 10vh;
+}
+
+.menu {
+    font-size: 130%;
+    text-align: center;
+    color: #F0F8FF;
+}
+
+.menu:hover {
+    border-bottom: 0.5vh solid #333333;
+    vertical-align: center;
+    line-height: 9.5vh;
+}
+
+#logo {
+    height: 6vh;
+    background-image: url(/images/Rebel-48.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+#title {
+    height: 4vh;
+    text-align: center;
+    font-size: 150%;
+    color: #DD1D22;
+    vertical-align: center;
+    line-height: 4vh;
+    font-weight: bolder;
+}
+
+#sign_in {
+    color: #F0F8FF;
+    background-color: #333333;
+    border: 2px solid #333333;
+    height: 3.5vh;
+    font-size: 130%;
+    border-radius: 20%;
+    width: 7vw;
+}
+
+#sign_in:hover {
+    background-color: black;
+    border: 2px solid black;
+}
+
+#cart {
+    background-color: rgba(47,141,179,0.5);
+    height: 88vh;
+    border: 2px solid #333333;
+    margin-top: 1vh;
+}
+
+#display {
+    background-color: rgba(10,186,181,0.5);
+    border: 2px solid #DD1D22;
+    border-radius: 15%;
+    margin-top: 5vh;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#display::-webkit-scrollbar {
+    background-color: aqua;
+}
+
+#display::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#display::-webkit-scrollbar-track-piece {
+    
+}
+
+#display::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+#display::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.inside {
+    height: auto;
+}
+
+.pic {
+    background-color: antiquewhite;
+    height: 15vh;
+}
+
+.desc {
+    
+}
+
+.price {
+    
+}
+
+.form {
+    
+}
+
+.qty {
+    
+}
+
+.add {
+    
+}
