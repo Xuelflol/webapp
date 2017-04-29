@@ -4,7 +4,6 @@ const express = require("express");
 const path = require("path");
 const port = process.env.PORT || 10000;
 const bodyParser = require("body-parser");
-const bcrypt = require("bcrypt");
 const session = require("express-session");
 
 var app = express();
