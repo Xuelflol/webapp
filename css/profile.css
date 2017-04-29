@@ -47,3 +47,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+#profile {
+    color: #333333;
+}

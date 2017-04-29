@@ -27,11 +27,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 5s;
 }
 
 #logo:hover {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
 }
 
 #title {

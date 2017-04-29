@@ -10384,6 +10384,10 @@ return jQuery;
         regDiv.style.display = "none";
         signInDiv.style.display = "inline";
     });
+    
+    document.getElementById("back").addEventListener("click", function() {
+        location.href = "/";
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
