@@ -20,55 +20,65 @@ $(document).ready(function() {
     var des_digit = 0;
     
     function addToCart(item_name, price, qty, item_code) {
-        var idiv = document.createElement("div");
-        idiv.id = "item_" + item_code;
-        idiv.className = "container-fluid item";
-
-        var del = document.createElement("div");
-        del.id = "del_" + item_code;
-        del.className = "delete";
-
-        var ndiv = document.createElement("div");
-        ndiv.className = "text";
-        ndiv.innerHTML = item_name;
-
-        var pdiv = document.createElement("div");
-        pdiv.className = "price2";
-        pdiv.id = "price_" + item_code;
-        pdiv.innerHTML = "$" + price + " X " + qty;
-
-        var qinput = document.createElement("input");
-        qinput.type = "number";
-        qinput.id = "uqty_" + item_code;
-        qinput.min = "1";
-        qinput.max = "5";
-        qinput.className = "qty2";
-
-        var sbutton = document.createElement("button");
-        sbutton.innerHTML = "Update";
-        sbutton.id = "update_" + item_code;
-        sbutton.className = "add2";
-
-        idiv.appendChild(del);
-        idiv.appendChild(ndiv);
-        idiv.appendChild(pdiv);
-        idiv.appendChild(qinput);
-        idiv.appendChild(sbutton);
-        items.appendChild(idiv);
-        
-        var del_button = document.getElementById("del_" + item_code);
         var cart_item = document.getElementById("item_" + item_code);
-        var update_button = document.getElementById("update_" + item_code);
-        var uqtyinput = document.getElementById("uqty_" + item_code);
-        var item_price = document.getElementById("price_" + item_code);
         
-        update_button.addEventListener("click", function() {
-            item_price.innerHTML = "$" + price + " X " + uqtyinput.value;
-        });
-        
-        del_button.addEventListener("click", function() {
-            cart_item.parentNode.removeChild(cart_item);
-        });
+        if (cart_item == null) {
+            var idiv = document.createElement("div");
+            idiv.id = "item_" + item_code;
+            idiv.className = "container-fluid item";
+
+            var del = document.createElement("div");
+            del.id = "del_" + item_code;
+            del.className = "delete";
+
+            var ndiv = document.createElement("div");
+            ndiv.className = "text";
+            ndiv.innerHTML = item_name;
+
+            var pdiv = document.createElement("div");
+            pdiv.className = "price2";
+            pdiv.id = "price_" + item_code;
+            pdiv.innerHTML = "$" + price + " X " + qty;
+
+            var qinput = document.createElement("input");
+            qinput.type = "number";
+            qinput.id = "uqty_" + item_code;
+            qinput.min = "1";
+            qinput.max = "5";
+            qinput.className = "qty2";
+
+            var sbutton = document.createElement("button");
+            sbutton.innerHTML = "Update";
+            sbutton.id = "update_" + item_code;
+            sbutton.className = "add2";
+
+            idiv.appendChild(del);
+            idiv.appendChild(ndiv);
+            idiv.appendChild(pdiv);
+            idiv.appendChild(qinput);
+            idiv.appendChild(sbutton);
+            items.appendChild(idiv);
+
+            var del_button = document.getElementById("del_" + item_code);
+            var update_button = document.getElementById("update_" + item_code);
+            var uqtyinput = document.getElementById("uqty_" + item_code);
+            var item_price = document.getElementById("price_" + item_code);
+
+            update_button.addEventListener("click", function() {
+                item_price.innerHTML = "$" + price + " X " + uqtyinput.value;
+            });
+        } else {
+            var del_button = document.getElementById("del_" + item_code);
+            var update_button = document.getElementById("update_" + item_code);
+            var qtyinput = document.getElementById("qty_" + item_code);
+            var item_price = document.getElementById("price_" + item_code);
+            
+            item_price.innerHTML = "$" + price + " X " + qtyinput.value;
+
+            del_button.addEventListener("click", function() {
+                cart_item.parentNode.removeChild(cart_item);
+            });
+        }
     }
     
     function populateMenu(divid, div_name, item_name, description, price, item_code) {
