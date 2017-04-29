@@ -5,7 +5,6 @@
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="/css/main.css"/>
         <link rel="stylesheet" href="/css/navigation.css"/>
@@ -31,36 +30,47 @@
                     <div id="meals" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 menu">Meals</div>
                 </div>
 
-                <button id="sign_in" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">SIGN IN</button>
+                <button id="sign_in">SIGN IN</button>
             </div>
 
             <div id="display" class="container-fluid col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                <!-- Same as users.html classes -->
+                <div id="meals_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
+                    <h1>Meals</h1>
+                </div>
+                
+                <div id="appetizers_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
+                    <h1>Appetizers</h1>
+                </div>
+                
+                <div id="desserts_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
+                    <h1>Desserts</h1>
+                </div>
+                
+                <div id="drinks_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
+                    <h1>Beverages</h1>
+                </div>
+                
+                <!-- Same as users.html classes
                 <div class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 inside">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic"></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 desc">Thlakdlaksdf lkasjdflkasjdlf kjaslkdjflaskdjflaksd jfklsadfjklaf laksdkfadskfkl</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price">$20</div>
                     <form class="form" action="/somewhere" type="post">
-                        <input type="number" name="quantity" min="1" max="5" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 qty">
-                        <input type="submit" value="ADD" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 add">
+                        <input type="number" name="quantity" min="1" max="5" class="qty">
+                        <input type="submit" value="ADD" class="add">
                     </form>
-                </div>
+                </div> -->
             </div>
 
             <div id="cart" class="container-fluid col-lg-2 col-md-2 col-sm-2 col-xs-2">
                 <div id="items">
-                    <div class="container-fluid item">
-                        <div class="delete col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-                        <div class="text col-lg-6 col-md-6 col-sm-6 col-xs-6">ITEM 1 blah blah blah blah blah blah blah</div>
-                        <div class="price2 col-lg-4 col-md-4 col-sm-4 col-xs-4">$20</div>
-                        <form class="form" action="/somewhere" type="post">
-                            <input type="number" name="quantity" min="1" max="5" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 qty2">
-                            <input type="submit" value="ADD" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add2">
-                        </form>
-                    </div>
+                    
                 </div>
+                
                 <button id="checkout">CHECKOUT</button>
             </div>
         </div>
+        
+        <script src="/scripts/mainbundle.js"></script>
     </body>
 </html>

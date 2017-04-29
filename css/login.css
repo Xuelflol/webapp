@@ -42,8 +42,6 @@ body {
 }
 
 .buttons {
-    height: 4vh;
-    width: 15%;
     background-color: #333333;
     color: #FDF8FF;
     border: 1px solid #333333;
@@ -62,6 +60,7 @@ body {
     font-size: 150%;
     margin: 15px auto;
     width: 35%;
+    cursor:pointer;
 }
 
 .get:hover {

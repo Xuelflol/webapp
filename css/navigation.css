@@ -48,9 +48,7 @@
     color: #F0F8FF;
     background-color: #333333;
     border: 2px solid #333333;
-    height: 3.5vh;
     font-size: 130%;
-    width: 7vw;
 }
 
 #logout:hover, #sign_in:hover {

@@ -1,6 +1,13 @@
 .inside {
     height: auto;
     text-align: center;
+    width:22%;
+    display:inline-block;
+    margin:10px 10px 10px 10px;
+}
+
+.cat_div {
+    width:100%;
 }
 
 .pic {
@@ -22,6 +29,10 @@
     color: #111111;
 }
 
+#meals_div, #appetizers_div, #desserts_div, #drinks_div {
+    display:none;
+}
+
 .form {
     text-align: center;
 }
@@ -30,7 +41,7 @@
     background-color: #2F8DB3;
     border: 1px solid #2F8DB3;
     margin: 0 15px;
-    width: 20%;
+    color: #FFFFFF;
 }
 
 .qty:hover {
@@ -43,7 +54,6 @@
     border: 1px solid #333333;
     color: #FDF8FF;
     margin: auto;
-    width: 25%;
 }
 
 .add:hover {
