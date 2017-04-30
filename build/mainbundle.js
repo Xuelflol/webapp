@@ -10496,7 +10496,7 @@ return jQuery;
         menuImg.src = "/images/Rebel-50.png";
         ndiv.appendChild(menuImg);
         ndiv.id = item_code;
-        ndiv.className = "col-lg-12 col-md-12 col-sm-12 col-xs-12 inside";
+        ndiv.className = "container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 inside";
 
         tdiv = document.createElement("div");
         tdiv.className = "title-div";
