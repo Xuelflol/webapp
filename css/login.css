@@ -29,11 +29,10 @@ body {
 }
 
 .inputs {
-    margin: 15px;
-    height: 4vh;
     background-color: #2F8DB3;
     color: #FDF8FF;
     border: 1px solid #2F8DB3;
+    margin: 15px;
 }
 
 .inputs:hover {
@@ -45,7 +44,7 @@ body {
     background-color: #333333;
     color: #FDF8FF;
     border: 1px solid #333333;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .buttons:hover {

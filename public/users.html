@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
-        <link rel="stylesheet" href="/css/main.css"/>
-        <link rel="stylesheet" href="/css/navigation.css"/>
+        <link rel="stylesheet" href="/css/users.css"/>
         <link rel="stylesheet" href="/css/scrollbar.css"/>
         <link rel="stylesheet" href="/css/food_item.css"/>
         <link rel="stylesheet" href="/css/cart.css"/>
@@ -18,23 +17,8 @@
     
     <body>
         <div class="container-fluid">
-            <div id="navigation" class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div id="logo_stuff" class="container col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    <div id="logo" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
-                    <div id="title" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Rebel Hangar</div>
-                </div>
-
-                <div id="menu_stuff">
-                    <div id="appetizers" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 menu">Appetizers</div>
-                    <div id="desserts" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 menu">Desserts</div>
-                    <div id="drinks" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 menu">Drinks</div>
-                    <div id="meals" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 menu">Meals</div>
-                    <div id="profile" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 menu">Profile</div>
-                </div>
-
-                <button id="logout" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">LOGOUT</button>
-            </div>
-
+            <div id="nav"></div>
+            
             <div id="display" class="container-fluid col-lg-10 col-md-10 col-sm-10 col-xs-10">
                 <div class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 inside">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic"></div>
@@ -59,8 +43,15 @@
                         </form>
                     </div>
                 </div>
-                <button id="checkout">CHECKOUT</button>
+                <button id="checkout" class="btn btn-block">CHECKOUT</button>
             </div>
         </div>
+        
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("/other/navBar.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+        </script>
     </body>
 </html>

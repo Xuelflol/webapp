@@ -9,11 +9,6 @@ $(document).ready(function() {
     var dessertsDiv = document.getElementById("desserts_div");
     var drinksDiv = document.getElementById("drinks_div");
     var items = document.getElementById("items");
-    
-    signInButton.addEventListener("click", function() {
-        location.href = "/signin";
-    });
-    
     var app_digit = 0;
     var bev_digit = 0;
     var meals_digit = 0;

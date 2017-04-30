@@ -124,6 +124,8 @@ app.use("/images", express.static("images"));
 
 app.use("/css", express.static("css"));
 
+app.use("/other", express.static("public"));
+
 app.get("/", function(req, resp) {
     resp.sendFile(pF + "/main.html");
 });
@@ -134,6 +136,15 @@ app.get("/created", function(req, resp) {
 
 app.get("/signin", function(req, resp) {
     resp.sendFile(pF + "/login.html");
+});
+
+app.get("/logout", function(req, resp) {
+    req.session.destroy();
+    resp.redirect('/');
+});
+
+app.get("/profile", function(req, resp) {
+    resp.sendFile(pF + "/profile.html");
 });
 
 // server
