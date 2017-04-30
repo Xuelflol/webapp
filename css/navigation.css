@@ -1,57 +1,42 @@
 #navigation {
     background-color: #0ABAB5;
-    z-index: 1;
 }
 
-#menu_stuff {
-    vertical-align: center;
-    line-height: 10vh;
-}
-
-.menu {
-    font-size: 130%;
-    text-align: center;
-    color: #F0F8FF;
-}
-
-.menu:hover {
-    border-bottom: 0.5vh solid #333333;
-    vertical-align: center;
-    line-height: 7.5vh;
-    transform: scale(1.5);
+#title {
+    font-weight: bolder;
 }
 
 #logo {
-    height: 6vh;
+    width: 5vw;
     background-image: url(/images/Rebel-48.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 5s;
 }
 
 #logo:hover {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
 }
 
 #title {
-    height: 4vh;
-    text-align: center;
-    font-size: 150%;
     color: #DD1D22;
-    vertical-align: center;
-    line-height: 4vh;
-    font-weight: bolder;
 }
 
-#logout, #sign_in {
-    color: #F0F8FF;
-    background-color: #333333;
-    border: 2px solid #333333;
-    font-size: 130%;
+a {
+    color: #FDF8FF;
 }
 
-#logout:hover, #sign_in:hover {
-    background-color: black;
-    border: 2px solid black;
+#dropdown {
+    text-align: center;
+    color: #333333;
+}
+
+li:hover {
+    color: #FDF8FF;
+    background-color: #0ABAB5;
+}
+
+.icon-bar {
+    background-color: #FDF8FF;
 }

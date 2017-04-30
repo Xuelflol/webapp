@@ -16,10 +16,10 @@
             <div id="sign_in" class="container-fluid">
                 <h2>Login</h2>
                 
-                <form class="form" action="/login" method="post">
-                    <input type="password" placeholder="PASSWORD" name="password" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs" pattern="^[^ \s]{4,15}$" title="Must be 4-15 characters. Whitespace is not allowed.">
-                    <input type="email" placeholder="EMAIL" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com">
-                    <input type="submit" value="SIGN IN"  class="buttons">
+                <form class="form input-group" action="/login" method="post">
+                    <input type="password" placeholder="PASSWORD" name="password" class="form-control inputs" pattern="^[^ \s]{4,15}$" title="Must be 4-15 characters. Whitespace is not allowed.">
+                    <input type="email" placeholder="EMAIL" name="email" class="form-control inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com">
+                    <input type="submit" value="SIGN IN"  class="buttons btn">
                 </form>
                 
                 <div id="get_register" class="get">Don't have an account?</div>
@@ -28,16 +28,18 @@
             <div id="register" class="container-fluid">
                 <h2>Register</h2>
                 
-                <form class="form" action="/register" method="post">
-                    <input type="password" placeholder="PASSWORD" name="password" pattern="^[^ \s]{4,15}$" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs" title="Must be 4-15 characters. Whitespace is not allowed.">
-                    <input type="email" placeholder="EMAIL" name="email" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com">
-                    <input type="text" placeholder="FIRST NAME" pattern="[a-zA-Z0-9]{1,15}" name="fname" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs" pattern="^[^ \s]{1,15}$" title="Must be 1-15 alpha-numerics.">
-                    <input type="text" placeholder="LAST NAME" name="lname" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 inputs" pattern="^[^ \s]{1,15}$" title="Must be 1-15 alpha-numerics.">
-                    <input type="submit" value="SUBMIT"  class="buttons">
+                <form class="form form-group" action="/register" method="post">
+                    <input type="password" placeholder="PASSWORD" name="password" pattern="^[^ \s]{4,15}$" class="form-control inputs" title="Must be 4-15 characters. Whitespace is not allowed.">
+                    <input type="email" placeholder="EMAIL" name="email" class="form-control inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com">
+                    <input type="text" placeholder="FIRST NAME" pattern="[a-zA-Z0-9]{1,15}" name="fname" class="form-control inputs" pattern="^[^ \s]{1,15}$" title="Must be 1-15 alpha-numerics.">
+                    <input type="text" placeholder="LAST NAME" name="lname" class="form-control inputs" pattern="^[^ \s]{1,15}$" title="Must be 1-15 alpha-numerics.">
+                    <input type="submit" value="SUBMIT"  class="buttons btn">
                 </form>
                 
                 <div id="get_sign_in" class="get">Have an account?</div>
             </div>
+            
+            <button id="back" class="buttons btn">BACK</button>
         </div>
         
         <script src="/scripts/loginbundle.js"></script>

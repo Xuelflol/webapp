@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="/css/navigation.css"/>
+    </head>
+    
+    <body>
+        <nav id="navigation" class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div id="logo" class="navbar-brand"></div>
+                    <div id="title" class="navbar-brand">Rebel Hangar</div>
+                    
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" id="menudrop">Menu Items <span class="caret"></span></a>
+                            <ul id="dropdown" class="dropdown-menu">
+                                <li id="appetizers">Appetizers</li>
+                                <li id="desserts">Desserts</li>
+                                <li id="drinks">Drinks</li>
+                                <li id="meals">Meals</li>
+                            </ul>
+                        </li>
+                        <li><a href="/profile">Profile</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="sign_in"><a href="/signin" class="reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="/logout" class="reg"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>

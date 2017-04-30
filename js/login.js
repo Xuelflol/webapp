@@ -52,4 +52,8 @@ $(document).ready(function() {
         regDiv.style.display = "none";
         signInDiv.style.display = "inline";
     });
+    
+    document.getElementById("back").addEventListener("click", function() {
+        location.href = "/";
+    });
 });
