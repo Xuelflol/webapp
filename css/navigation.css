@@ -40,3 +40,7 @@ li:hover {
 .icon-bar {
     background-color: #FDF8FF;
 }
+
+#log_out {
+    display:none;
+}
