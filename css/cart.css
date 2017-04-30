@@ -42,7 +42,7 @@
 .qty2 {
     background-color: #2F8DB3;
     border: 1px solid #2F8DB3;
-    margin: 5px 15px;
+    margin: 5px 5px 5px 0px;
     color: #FFFFFF;
 }
 
@@ -55,7 +55,7 @@
     background-color: #333333;
     border: 1px solid #333333;
     color: #FDF8FF;
-    margin: 5px auto;
+    margin: 5px 5px 5px 0px;
 }
 
 .add2:hover {

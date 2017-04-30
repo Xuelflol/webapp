@@ -1,7 +1,7 @@
 .inside {
-    height: auto;
     text-align: center;
     width:22%;
+    height:300px;
     display:inline-block;
     margin:10px 10px 10px 10px;
 }
@@ -19,7 +19,7 @@
 }
 
 .desc {
-    font-size: 120%;
+    font-size: 100%;
     font-weight: bold;
 }
 
