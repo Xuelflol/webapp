@@ -226,7 +226,7 @@ $(document).ready(function() {
                     updateQuantity(item_code, qform.value, price);
                 }
             } else if (cart_item != null) {
-                updateQuantity(item_code, qform.value);
+                updateQuantity(item_code, qform.value, price);
             }
         });
     }

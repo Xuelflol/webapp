@@ -10342,11 +10342,6 @@ return jQuery;
     var dessertsDiv = document.getElementById("desserts_div");
     var drinksDiv = document.getElementById("drinks_div");
     var items = document.getElementById("items");
-    
-    signInButton.addEventListener("click", function() {
-        location.href = "/signin";
-    });
-    
     var app_digit = 0;
     var bev_digit = 0;
     var meals_digit = 0;
@@ -10564,7 +10559,7 @@ return jQuery;
                     updateQuantity(item_code, qform.value, price);
                 }
             } else if (cart_item != null) {
-                updateQuantity(item_code, qform.value);
+                updateQuantity(item_code, qform.value, price);
             }
         });
     }

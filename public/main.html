@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/css/scrollbar.css"/>
         <link rel="stylesheet" href="/css/food_item.css"/>
         <link rel="stylesheet" href="/css/cart.css"/>
-        <link rel="import" href="/public/navbar.html"/>
+        <link rel="import" href="/other/navbar.html"/>
         <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
         
     </head>
@@ -61,7 +61,7 @@
         <script src="/scripts/mainbundle.js"></script>
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script>
-            $.get("navBar.html", function(data){
+            $.get("/other/navbar.html", function(data){
                 $("#nav").replaceWith(data);
             });
         </script>
