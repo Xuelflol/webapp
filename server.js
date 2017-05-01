@@ -26,7 +26,7 @@ app.use(session({
 // ajax response
 app.post("/register", function(req, resp) {
     pg.connect(dbURL, function(err, client, done) {
-        client.query("INSERT INTO hoth_users (first_name, last_name, password, email) VALUES ($1, $2, $3, $4)", [req.body.fname, req.body.lname, req.body.password, req.body.email], function(err, result) {
+        client.query("INSERT INTO hoth_users (first_name, last_name, password, email, username) VALUES ($1, $2, $3, $4, $5)", [req.body.fname, req.body.lname, req.body.password, req.body.email, req.body.uname], function(err, result) {
             done();
             
             if (err) {

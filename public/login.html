@@ -17,8 +17,8 @@
                 <h2>Login</h2>
                 
                 <form class="form input-group" action="/login" method="post">
-                    <input type="password" placeholder="PASSWORD" name="password" class="form-control inputs" pattern="^[^ \s]{4,15}$" title="Must be 4-15 characters. Whitespace is not allowed.">
-                    <input type="email" placeholder="EMAIL" name="email" class="form-control inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com">
+                    <input type="password" placeholder="PASSWORD" name="password" class="form-control inputs" pattern="^[^ \s]{4,15}$" title="Must be 4-15 characters. Whitespace is not allowed." required="required">
+                    <input type="email" placeholder="EMAIL" name="email" class="form-control inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com" required="required">
                     <input type="submit" value="SIGN IN"  class="buttons btn">
                 </form>
                 
@@ -29,11 +29,12 @@
                 <h2>Register</h2>
                 
                 <form class="form form-group" action="/register" method="post">
-                    <input type="password" placeholder="PASSWORD" name="password" pattern="^[^ \s]{4,15}$" class="form-control inputs" title="Must be 4-15 characters. Whitespace is not allowed.">
-                    <input type="email" placeholder="EMAIL" name="email" class="form-control inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com">
-                    <input type="text" placeholder="FIRST NAME" pattern="[a-zA-Z0-9]{1,15}" name="fname" class="form-control inputs" pattern="^[^ \s]{1,15}$" title="Must be 1-15 alpha-numerics.">
-                    <input type="text" placeholder="LAST NAME" name="lname" class="form-control inputs" pattern="^[^ \s]{1,15}$" title="Must be 1-15 alpha-numerics.">
-                    <input type="submit" value="SUBMIT"  class="buttons btn">
+                    <input type="password" placeholder="PASSWORD" name="password" pattern="[^ \s]{4,15}" class="form-control inputs" title="Must be 4-15 characters. Whitespace is not allowed." required="require">
+                    <input type="email" placeholder="EMAIL" name="email" class="form-control inputs" pattern="^[a-zA-Z0-9\._\-]{1,50}@[a-zA-Z0-9_\-]{1,50}(.[a-zA-Z0-9_\-])?.(ca|com|org|net|info|us|cn|co.uk|se)$" title="Must be in the form of example@example.com" min="6" required="require">
+                    <input type="text" placeholder="USERNAME" pattern="[a-zA-Z0-9\-_]{4,20}" name="uname" class="form-control inputs" title="Must be 4-20 alpha-numerics. Hyphen and underscore are allowed." required="require">
+                    <input type="text" placeholder="FIRST NAME" name="fname" class="form-control inputs" pattern="^[a-zA-Z]{1,15}$" title="Must be 1-15 alpha-numerics." required="require">
+                    <input type="text" placeholder="LAST NAME" name="lname" class="form-control inputs" pattern="^[a-zA-Z]{1,15}$" title="Must be 1-15 alpha-numerics." required="require">
+                    <input type="submit" value="SUBMIT"  class="buttons btn" required="require">
                 </form>
                 
                 <div id="get_sign_in" class="get">Have an account?</div>
