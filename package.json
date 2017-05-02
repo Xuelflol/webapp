@@ -1,19 +1,8 @@
 {
   "name": "acit2910",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "bootstrap": "^3.3.7",
-    "express": "^4.15.2",
-    "express-session": "^1.15.2",
-    "jquery": "^3.2.1",
-    "pg": "^6.1.5",
-    "socket.io": "^1.7.3",
-    "webkit": "^0.0.0",
-    "webpack": "^2.4.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -28,5 +17,15 @@
     "url": "https://github.com/Rc85/webapp/issues"
   },
   "homepage": "https://github.com/Rc85/webapp#readme",
-  "description": ""
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "jquery": "^3.2.1",
+    "pg": "^6.1.5",
+    "socket.io": "^1.7.3",
+    "webkit": "0.0.0",
+    "webpack": "^2.4.1"
+  }
 }

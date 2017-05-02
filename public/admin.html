@@ -9,10 +9,46 @@
         
         <link rel="stylesheet" href="/css/admin.css"/>
         <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
+		<script src="js/admin.js"></script>
         
     </head>
     
     <body>
+		<div id="admin-div" class="container-fluid">
+			
+			<div id=popupform>
+				<form action="#" id="admin-form" method="post" name="form">
+				<img id="close" src="/images/close-icon.png" onclick ="div_hide()">
+				<h2>Form</h2>
+				<hr>
+				<input id="item-name" name="item-name" placeholder="Item Name" type="text">
+				<input id="item-desc" name="item-desc" placeholder="Item Description" type="text">
+				<input id="item-price" name="item-price" placeholder="Price" type=number min="1" step="any">
+				
+				
+				
+				
+
+				
+				</form>
+			
+			
+			
+			
+			</div>
+		
+		<a id="addbut" class="btn icon-btn btn-success" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Add
+</a>
+		
+		</div>
+		<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+            $.get("/other/navbar.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+    </script>
         
     </body>
 </html>

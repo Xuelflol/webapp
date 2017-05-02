@@ -1,0 +1,25 @@
+.btn-glyphicon {
+    padding:8px;
+    background:#ffffff;
+    margin-right:4px;
+}
+.icon-btn {
+    padding: 1px 15px 3px 2px;
+    border-radius:50px;
+	
+	position:fixed;
+}
+#addbut{
+	position: fixed;
+    bottom: 4vh;
+    right: 2vw; 
+}
+
+#close{
+position:absolute;
+right:3vw
+top:3vh;
+cursor: pointer;
+max-height:3vh;
+max-width: 3vw;
+}

@@ -13,9 +13,9 @@ body {
     margin-top: 10vh;
     width: 80%;
     margin: 10vh auto;
-    background-color: rgba(10,186,181,0.5);
+    background-color:rgba(240,240,250,0.6);
     border: 2px solid #DD1D22;
-    border-radius: 20%;
+    border-radius: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
