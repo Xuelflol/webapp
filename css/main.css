@@ -1,6 +1,7 @@
 body {
+    position: relative;
+    background-color: white;
     margin: 0;
-    background-image: url(/images/Hoth_plains.jpg);
 }
 
 #cart {
@@ -12,11 +13,26 @@ body {
     padding:0px;
 }
 
-#display {
-    background-color: rgba(10,186,181,0.5);
-    border: 2px solid #DD1D22;
-    margin-top: 1vh;
-    height: 88vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+#appetizers {
+    padding: 100px 25px;
+}
+
+#desserts {
+    padding: 100px 25px;
+}
+
+#drinks {
+    padding: 100px 25px;
+}
+
+#meals {
+    padding: 100px 25px;
+}
+
+.imgs {
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

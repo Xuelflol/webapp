@@ -4,6 +4,7 @@
 
 #title {
     font-weight: bolder;
+    color: #DD1D22;
 }
 
 #logo {
@@ -19,10 +20,6 @@
     transform: rotateY(360deg);
 }
 
-#title {
-    color: #DD1D22;
-}
-
 a {
     color: #FDF8FF;
 }
@@ -32,7 +29,7 @@ a {
     color: #333333;
 }
 
-li:hover {
+li:hover, .open {
     color: #FDF8FF;
     background-color: #0ABAB5;
 }

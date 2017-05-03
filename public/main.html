@@ -3,67 +3,110 @@
     <head>
         <title></title>
         
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <link rel="stylesheet" href="/css/main.css"/>
         <link rel="stylesheet" href="/css/scrollbar.css"/>
         <link rel="stylesheet" href="/css/food_item.css"/>
         <link rel="stylesheet" href="/css/cart.css"/>
-        <link rel="import" href="/public/navbar.html"/>
+        <link rel="stylesheet" href="/css/navigation.css"/>
         <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
     
-    <body>
-        <div class="container-fluid">
-            <div id="nav"></div>
-            
-            <div id="display" class="container-fluid col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                <div id="meals_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
-                    <h1>Meals</h1>
-                </div>
-                
-                <div id="appetizers_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
-                    <h1>Appetizers</h1>
-                </div>
-                
-                <div id="desserts_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
-                    <h1>Desserts</h1>
-                </div>
-                
-                <div id="drinks_div" class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 cat_div">
-                    <h1>Beverages</h1>
-                </div>
-                
-                <!-- Same as users.html classes
-                <div class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 inside">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pic"></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 desc">Thlakdlaksdf lkasjdflkasjdlf kjaslkdjflaskdjflaksd jfklsadfjklaf laksdkfadskfkl</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price">$20</div>
-                    <form class="form" action="/somewhere" type="post">
-                        <input type="number" name="quantity" min="1" max="5" class="qty">
-                        <input type="submit" value="ADD" class="add">
-                    </form>
-                </div> -->
-            </div>
-
-            <div id="cart" class="container-fluid col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <div id="items">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav id="navigation" class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div id="logo" class="navbar-brand"></div>
+                    <div id="title" class="navbar-brand">Rebel Hangar</div>
                     
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
                 </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#appetizers">Appetizers</a></li>
+                        <li><a href="#desserts">Desserts</a></li>
+                        <li><a href="#drinks">Drinks</a></li>
+                        <li><a href="#meals">Meals</a></li>
+                        <li id="profile"><a href="/profile">Profile</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="sign_in"><a href="/signin" class="reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="/logout" class="reg"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="appetizers" class="container-fluid">
+            <div class="text-center">
+                <h2>Appetizers</h2>
+            </div>
+            
+            <!-- 
+            3 food items can fit in one row, otherwise another row will need to be created. This could most likely be done by checking the index number, 
+            if the index number is 3, 6, 9, etc. then create a new row and append the next 3 food items. When you come accross another menu category, reset an 
+            index or something. 
+            -->
+            
+            <div class="row">
                 
-                <button id="checkout" class="btn btn-block">CHECKOUT</button>
+                <!-- Beginning of food item -->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>BBQ X-Wings</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="imgs"></div>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>This is a description.</h4>
+                            <h3>$19</h3>
+                            <button class="btn btn-lg">Add To Cart</button>
+                        </div>
+                    </div>      
+                </div>     
+                <!--End of item -->
+                
+            </div>
+            
+        </div>
+        
+        <div id="desserts" class="container-fluid">
+            <div class="text-center">
+                <h2>Desserts</h2>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        
+        <div id="drinks" class="container-fluid">
+            <div class="text-center">
+                <h2>Drinks</h2>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        
+        <div id="meals" class="container-fluid">
+            <div class="text-center">
+                <h2>Meals</h2>
+            </div>
+            <div class="row">
             </div>
         </div>
         
         <script src="/scripts/mainbundle.js"></script>
-        <script src="//code.jquery.com/jquery.min.js"></script>
-        <script>
-            $.get("navBar.html", function(data){
-                $("#nav").replaceWith(data);
-            });
-        </script>
     </body>
 </html>
