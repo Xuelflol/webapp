@@ -18,7 +18,7 @@
         
     </head>
     
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
         <div id="nav"></div>
         
         <div id="appetizers" class="container-fluid">
@@ -79,13 +79,6 @@
             <div class="row">
             </div>
         </div>
-        
-        <script src="//code.jquery.com/jquery.min.js"></script>
-        <script>
-            $.get("/public/navbar.html", function(data){
-                $("#nav").replaceWith(data);
-            });
-        </script>
         <script src="/scripts/mainbundle.js"></script>
     </body>
 </html>

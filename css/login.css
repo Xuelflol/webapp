@@ -16,6 +16,7 @@ body {
     background-color:rgba(240,240,250,0.6);
     border: 2px solid #DD1D22;
     border-radius: 20vw;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,18 +26,6 @@ body {
     margin: 0 auto;
     width: 50%;
     text-align: center;
-}
-
-.inputs {
-    background-color: #2F8DB3;
-    color: #FDF8FF;
-    border: 1px solid #2F8DB3;
-    margin: 15px;
-}
-
-.inputs:hover {
-    background-color: #2257BF;
-    border: 1px solid #2257BF;
 }
 
 .buttons {

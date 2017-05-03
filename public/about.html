@@ -36,20 +36,20 @@
 	
 	</body>
 	<script type="text/javascript">
-(function() {
+        (function() {
 
-var img = document.getElementById('about-left').firstChild;
-img.onload = function() {
-    if(img.height > img.width) {
-        img.height = '100%';
-        img.width = 'auto';
-    }
-};
+        var img = document.getElementById('about-left').firstChild;
+        img.onload = function() {
+            if(img.height > img.width) {
+                img.height = '100%';
+                img.width = 'auto';
+            }
+        };
 
-}());
-</script>
-<script src="//code.jquery.com/jquery.min.js"></script>
-	<script>
+        }());
+    </script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
             $.get("/public/navbar.html", function(data){
                 $("#nav").replaceWith(data);
             });

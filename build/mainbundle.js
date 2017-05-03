@@ -10332,6 +10332,11 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function() {
+    
+    $.get("/public/navbar.html", function(data){
+        $("#nav").replaceWith(data);
+    });
+    
     var signInButton = document.getElementById("sign_in");
     var appetizers = document.getElementById("appetizers");
     var desserts = document.getElementById("desserts");

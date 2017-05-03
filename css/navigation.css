@@ -24,11 +24,6 @@ a {
     color: #FDF8FF;
 }
 
-#dropdown {
-    text-align: center;
-    color: #333333;
-}
-
 li:hover, .open {
     color: #FDF8FF;
     background-color: #0ABAB5;
@@ -37,10 +32,3 @@ li:hover, .open {
 .icon-bar {
     background-color: #FDF8FF;
 }
-<<<<<<< HEAD
-=======
-
-#log_out {
-    display:none;
-}
->>>>>>> de2157ab79e8927eaa484013292485442419c7e0

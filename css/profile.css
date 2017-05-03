@@ -3,13 +3,6 @@ body {
     background-image: url(/images/Hoth_plains.jpg);
 }
 
-#options {
-    background-color: rgba(10,186,181,0.5);
-    border: 2px solid #DD1D22;
-    margin-top: 5vh;
-    height: 80vh;
-}
-
 .form {
     margin: 15px auto;
     width: 50%;
@@ -17,8 +10,6 @@ body {
 }
 
 .inputs {
-    width: 50%;
-    height: 4vh;
     background-color: #2F8DB3;
     color: #FDF8FF;
     border: 1px solid #2F8DB3;
@@ -46,6 +37,10 @@ body {
     overflow-y: auto;
 }
 
-#profile {
+#profile_link {
     color: #333333;
+}
+
+#cEmail {
+    padding-top: 100px;
 }
