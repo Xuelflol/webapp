@@ -10,11 +10,8 @@
         <link rel="stylesheet" href="/css/scrollbar.css"/>
         <link rel="stylesheet" href="/css/food_item.css"/>
         <link rel="stylesheet" href="/css/cart.css"/>
-<<<<<<< HEAD
         <link rel="stylesheet" href="/css/navigation.css"/>
-=======
         <link rel="import" href="/other/navbar.html"/>
->>>>>>> de2157ab79e8927eaa484013292485442419c7e0
         <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,35 +19,7 @@
     </head>
     
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <nav id="navigation" class="navbar navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div id="logo" class="navbar-brand"></div>
-                    <div id="title" class="navbar-brand">Rebel Hangar</div>
-                    
-                    <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#appetizers">Appetizers</a></li>
-                        <li><a href="#desserts">Desserts</a></li>
-                        <li><a href="#drinks">Drinks</a></li>
-                        <li><a href="#meals">Meals</a></li>
-                        <li id="profile"><a href="/profile">Profile</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li id="sign_in"><a href="/signin" class="reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                        <li><a href="/logout" class="reg"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div id="nav"></div>
         
         <div id="appetizers" class="container-fluid">
             <div class="text-center">
@@ -111,15 +80,12 @@
             </div>
         </div>
         
-<<<<<<< HEAD
-=======
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script>
-            $.get("/other/navbar.html", function(data){
+            $.get("/public/navbar.html", function(data){
                 $("#nav").replaceWith(data);
             });
         </script>
->>>>>>> de2157ab79e8927eaa484013292485442419c7e0
         <script src="/scripts/mainbundle.js"></script>
     </body>
 </html>

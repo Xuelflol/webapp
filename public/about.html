@@ -13,6 +13,7 @@
 	</head>
 	
 	<body>
+        <div id="nav"></div>
 		<div class="container-fluid">
 			<div class="row">
 				<div id="about-left" class="col-lg-8 col-md-8 col-sm-4 col-xs-4">
@@ -49,19 +50,8 @@ img.onload = function() {
 </script>
 <script src="//code.jquery.com/jquery.min.js"></script>
 	<script>
-            $.get("/other/navbar.html", function(data){
+            $.get("/public/navbar.html", function(data){
                 $("#nav").replaceWith(data);
             });
     </script>
-	
-	
-
-
-
-
-
-
-
-
-
 </html>

@@ -125,7 +125,7 @@ app.use("/images", express.static("images"));
 
 app.use("/css", express.static("css"));
 
-app.use("/other", express.static("public"));
+app.use("/public", express.static("public"));
 
 app.get("/", function(req, resp) {
     
