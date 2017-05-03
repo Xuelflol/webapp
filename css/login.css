@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-image: url(/images/rendition1.img.jpg);
+	width:100vw;
 }
 
 #register {

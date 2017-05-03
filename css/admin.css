@@ -1,3 +1,9 @@
+body{
+	margin:0;
+	width:100vw;
+	background-image: url(/images/Hoth_plains.jpg);
+}
+
 .btn-glyphicon {
     padding:8px;
     background:#ffffff;
@@ -22,4 +28,8 @@ top:3vh;
 cursor: pointer;
 max-height:3vh;
 max-width: 3vw;
+}
+
+#admin-div{
+	height:auto;
 }
