@@ -10343,10 +10343,6 @@ return jQuery;
     var drinksDiv = document.getElementById("drinks_div");
     var items = document.getElementById("items");
     
-    signInButton.addEventListener("click", function() {
-        location.href = "/signin";
-    });
-    
     var app_digit = 0;
     var bev_digit = 0;
     var meals_digit = 0;
@@ -10458,39 +10454,6 @@ return jQuery;
             
             cart_i.parentNode.removeChild(cart_i);
         });
-        /*} else if (cart_item != null) {
-            var add_button = document.getElementById("add_" + item_code);
-            var del_button = document.getElementById("del_" + item_code);
-            var update_button = document.getElementById("update_" + item_code);
-            var qform = document.forms["iform_" + item_code].elements["uqty_" + item_code];
-            var item_price = document.getElementById("price_" + item_code);
-            
-            add_button.addEventListener("click", function() {
-                if (qform.value > 0 && qform.value <= 5) {
-                    item_price.innerHTML = "$" + price + " X <span id='qcount_" + item_code + "'>" + orders[item_code] + "</span>";
-
-                    updateQuantity(item_code, qform.value);
-                    console.log(orders);
-                    console.log(cart_item);
-                }
-            });
-            
-            update_button.addEventListener("click", function() {
-                if (qform.value > 0 && qform.value <= 5) {
-
-                    orders[item_code] = parseInt(qform.value);
-                    
-                    item_price.innerHTML = "$" + price + " X <span id='qcount_" + item_code + "'>" + orders[item_code] + "</span>";
-                    console.log(orders);
-                }
-            });
-            
-            var c_item = document.getElementById("item_" + item_code);
-
-            del_button.addEventListener("click", function() {
-                c_item.parentNode.removeChild(c_item);
-            });
-        }*/
     }
     
     function populateMenu(divid, div_name, item_name, description, price, item_code) {
@@ -10501,7 +10464,7 @@ return jQuery;
         menuImg.src = "/images/Rebel-50.png";
         ndiv.appendChild(menuImg);
         ndiv.id = item_code;
-        ndiv.className = "col-lg-12 col-md-12 col-sm-12 col-xs-12 inside";
+        ndiv.className = "container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-3 inside";
 
         tdiv = document.createElement("div");
         tdiv.className = "title-div";
@@ -10515,7 +10478,6 @@ return jQuery;
         cdiv.className = "control-div";
 
         var form = document.createElement("form");
-        //form.setAttribute("method", "post");
         form.name = "form_" + item_code;
         form.id = "form_id_" + item_code;
         qinput = document.createElement("input");
@@ -10546,14 +10508,7 @@ return jQuery;
         var qform = document.forms["form_" + item_code].elements["qty_" + item_code];
         
         item_form.setAttribute("action","javascript:console.log('added')");
-        //item_form.setAttribute("onclick","addToCart(" + item_name + ", " + price + ", " + qform.value + ", " + item_code + ");")
         
-        //submit_item.setAttribute("formaction","javascript:addToCart(" + item_name + ", " + price + ", " + qform.value + ", " + item_code + ");");
-        //console.log(qform);
-        
-        //item_form.setAttribute("action","javascript:addToCart(" + item_name + ", " + price + ", " + qform.value + ", " + item_code + ");");
-        
-        //var addTo = document.getElementById("button_" + item_code);
         submit_item.addEventListener("click", function() {
             var cart_item = document.getElementById("item_" + item_code);
             
@@ -10564,7 +10519,7 @@ return jQuery;
                     updateQuantity(item_code, qform.value, price);
                 }
             } else if (cart_item != null) {
-                updateQuantity(item_code, qform.value);
+                updateQuantity(item_code, qform.value, price);
             }
         });
     }
@@ -10645,6 +10600,22 @@ return jQuery;
         
         $("#meals_div").show()
         $("#meals_div").siblings().hide();
+    });
+    
+    $.ajax({
+        url:"/user-cp",
+        type:"post",
+        success:function(resp) {
+            if (resp.status == "customer") {
+                document.getElementById("sign_in").innerHTML = '<a href="/user_profile" class="reg"><span class="glyphicon glyphicon-user"></span> Profile</a>';
+                
+                document.getElementById("log_out").style.display = "inline";
+            }
+        }
+    });
+    
+    document.getElementById("log_out").addEventListener("click", function() {
+        location.href = "/logout";
     });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

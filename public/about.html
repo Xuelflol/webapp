@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>About Us</title>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/css/about.css"/>
+        <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
+         <meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="about-left" class="col-lg-8 col-md-8 col-sm-4 col-xs-4">
+					<img id="imghoth" src="/images/hoth-team.jpg" alt="hoth team" />
+					<p>Team Hoth: Alex, Creighton, Fan, Roger, Rui</p>
+				
+				</div>
+				
+				<div id="about-right" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					Echo Base was the settlement established by the Rebel Alliance on the frigid planet of Hoth in the wake of the Battle of Yavin, so named due to its strange acoustics.[6] Less than a month after its establishment, the base was discovered by the Galactic Empire who then invaded Hoth, forcing the Rebels to evacuate.
+					<br>
+					<br>
+					Echo Base was carved out of a glacier and connected by artificial corridors linked together with structural supports, while natural caverns were expanded to suit the Rebel Alliance's needs. It was protected from orbital bombardments with a massive deflector shield generator and v-150 ion cannon, which would help the Alliance evacuate the base in case of an attack.[5] Designed to be evacuated at a moment's notice, the base was hastily constructed and often as not, wampa ice creatures would sneak into the base at night, forcing the closures of various corridors. Owing to slab-dab construction methods, a single faulty element in the base's electrical system could deny heat to half the base. Nevertheless, soldiers of the outpost were better equipped and displayed better discipline than those stationed elsewhere.[7] In its cavernous ice hangars, the base hosted a contingent of speeders, which were specially modified to operate in the harsh conditions and which the Rebels used for patrol and defense of the outpost.[8][9] As the technicians had trouble adapting their airspeeders to the subzero temperatures of Hoth, the base also held a herd of native tauntaun creatures for the patrols and recon missions
+				
+				</div>	
+				
+			</div>
+		
+		</div>
+	
+	</body>
+	<script type="text/javascript">
+(function() {
+
+var img = document.getElementById('about-left').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+    }
+};
+
+}());
+</script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+            $.get("/other/navbar.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+    </script>
+	
+	
+
+
+
+
+
+
+
+
+
+</html>

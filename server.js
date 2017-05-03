@@ -26,7 +26,7 @@ app.use(session({
 // ajax response
 app.post("/register", function(req, resp) {
     pg.connect(dbURL, function(err, client, done) {
-        client.query("INSERT INTO hoth_customer (fname, lname, password, email) VALUES ($1, $2, $3, $4)", [req.body.fname, req.body.lname, req.body.password, req.body.email], function(err, result) {
+        client.query("INSERT INTO hoth_users (first_name, last_name, password, email, username) VALUES ($1, $2, $3, $4, $5)", [req.body.fname, req.body.lname, req.body.password, req.body.email, req.body.uname], function(err, result) {
             done();
             
             if (err) {
@@ -40,37 +40,22 @@ app.post("/register", function(req, resp) {
 
 app.post("/login", function(req, resp) {
     pg.connect(dbURL, function(err, client, done) {
-        client.query("SELECT * FROM hoth_customer WHERE email = $1 AND password = $2", [req.body.email, req.body.password], function(err, result) {
+        client.query("SELECT * FROM hoth_users WHERE email = $1 AND password = $2", [req.body.email, req.body.password], function(err, result) {
             done();
             if (err) {
                 console.log(err);
             }
             
-            if (result.rows.length == 0) {
-                client.query("SELECT * FROM hoth_employee WHERE email = $1 AND password = $2", [req.body.email, req.body.password], function(err, res) {
-                    done();
-                    if (err) {
-                        console.log(err);
-                    }
-        
-                    if (res.rows.length > 0) {
-                        req.session.loginid = res.rows[0].cust_id;
-                        req.session.email = res.rows[0].email;
-                        req.session.pass = res.rows[0].password;
-                    }
-                    
-                    if (res.rows[0].auth_level == "A") {
-                        resp.redirect("/admin");
-                    } else {
-                        resp.redirect("/kitchen");
-                    }
-                });
-            } else if (result.rows.length > 0) {
-                req.session.loginid = result.rows[0].cust_id;
+            if (result.rows.length > 0) {
+                req.session.username = result.rows[0].username;
                 req.session.email = result.rows[0].email;
+                req.session.loginid = result.rows[0].user_id;
                 req.session.pass = result.rows[0].password;
+                req.session.auth = result.rows[0].auth_level;
                 
                 resp.redirect("/");
+            } else {
+                resp.send("Wrong login information");
             }
         });
     });
@@ -116,6 +101,23 @@ app.post("/meals", function(req, resp) {
     });
 });
 
+app.post("/user-cp", function(req, resp) {
+    pg.connect(dbURL, function(err, client, done) {
+        if (req.session.auth == "C") {
+            client.query("SELECT * FROM hoth_users WHERE auth_level = 'C'", function(err, result) {
+                done();
+
+                var obj = {
+                    status:"customer",
+                    result:result.rows
+                }
+
+                resp.send(obj);
+            });
+        } 
+    });
+});
+
 // redirects
 app.use("/scripts", express.static("build"));
 
@@ -126,7 +128,14 @@ app.use("/css", express.static("css"));
 app.use("/other", express.static("public"));
 
 app.get("/", function(req, resp) {
-    resp.sendFile(pF + "/main.html");
+    
+    if (req.session.auth == "A") {
+        resp.sendFile(pF + "/admin.html");
+    } else if (req.session.auth == "E") {
+        resp.sendFile(pF + "/kitchen.html");
+    } else {
+        resp.sendFile(pF + "/main.html");
+    }
 });
 
 app.get("/created", function(req, resp) {
@@ -139,11 +148,15 @@ app.get("/signin", function(req, resp) {
 
 app.get("/logout", function(req, resp) {
     req.session.destroy();
-    resp.redirect('/');
+    resp.redirect("/");
 });
 
-app.get("/profile", function(req, resp) {
-    resp.sendFile(pF + "/profile.html");
+app.get("/user_profile", function(req, resp) {
+    if (req.session.auth == "C") {
+        resp.sendFile(pF + "/profile.html");
+    } else {
+        resp.sendFile("/");
+    }
 });
 
 // server

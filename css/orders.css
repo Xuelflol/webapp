@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+	width:100vw;
+	background-image: url(/images/Hoth_plains.jpg);
+    
+}
+
+
+
+#order-display{
+	background-color:rgba(240,240,250,0.6);
+    height:73vh;
+	width:65vw;
+	margin-top:10vh;
+	border: 2px solid #333333;
+	margin-right:1vw;
+	margin-left:2vw;
+	
+}
+
+#cart-total-div{
+	background-color:rgba(240,240,250,0.6);
+    height:73vh;
+	width:30vw;
+	margin-top:10vh;
+	border: 2px solid #333333;
+	
+}
+
+#order-cust-info{
+	background-color:rgba(240,240,250,0.6);
+	width:65vw;
+	height:15vh;
+	margin-top:1vh;
+	border: 2px solid #333333;
+	margin-right:1vw;
+	margin-left:2vw;
+	
+}
+
+#order-submit-div{
+	background-color:rgba(240,240,250,0.6);
+	width:30vw;
+	height:15vh;
+	margin-top:1vh;
+	border: 2px solid #333333;
+	
+}
+
+#order-submit-btn{
+	margin-top:2vh;
+	width:10vw;
+	height:10vh;
+	margin-left:2vw;
+	border-radius: 6vw;
+	
+
+}
+
+#order-cancel-btn{
+	margin-top:2vh;
+	width:10vw;
+	height:10vh;
+	margin-left:4vw;
+	border-radius: 6vw;
+}

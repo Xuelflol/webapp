@@ -31,6 +31,7 @@
 
 #meals_div, #appetizers_div, #desserts_div, #drinks_div {
     display:none;
+    width:100%;
 }
 
 .form {
