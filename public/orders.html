@@ -12,6 +12,7 @@
     </head>
     
     <body>
+		<div id="nav"></div>
 		<div class="container-fluid">
 		<div class="row">
 		<div id=order-display class="col-lg-8 col-md-8 col-sm-4 col-xs-8">
@@ -46,7 +47,7 @@
     </body>
 	<script src="//code.jquery.com/jquery.min.js"></script>
 	<script>
-            $.get("/other/navbar.html", function(data){
+            $.get("navbar.html", function(data){
                 $("#nav").replaceWith(data);
             });
     </script>
