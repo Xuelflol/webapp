@@ -1,9 +1,4 @@
-$(document).ready(function() {
-    
-    $.get("/public/navbar.html", function(data){
-        $("#nav").replaceWith(data);
-    });
-    
+$(document).ready(function() {    
     var signInButton = document.getElementById("sign_in");
     var appetizers = document.getElementById("appetizers");
     var desserts = document.getElementById("desserts");

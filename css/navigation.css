@@ -20,19 +20,11 @@
     transform: rotateY(360deg);
 }
 
-a {
-    color: #FDF8FF;
-}
-
-li:hover, .open {
-    color: #FDF8FF;
-    background-color: #0ABAB5;
-}
-
-.icon-bar {
-    background-color: #FDF8FF;
+.nav {
+    color: white;
 }
 
 .navbar .active a {
-    color: black;
+    color: #0ABAB5;
+    background-color: #FDF8FF;
 }
