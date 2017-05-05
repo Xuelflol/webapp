@@ -29,10 +29,14 @@ body {
     padding: 100px 25px;
 }
 
+#about{
+	padding: 100px 25px;
+}
+
 .imgs {
     width: 100%;
     height: 500px;
-    background-position: center center;
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }

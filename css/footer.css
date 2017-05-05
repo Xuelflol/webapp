@@ -1,0 +1,27 @@
+footer{
+	background-color:aliceblue;
+	height:auto;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+ul {
+    list-style: url(/images/);
+	
+}
+
+
+
