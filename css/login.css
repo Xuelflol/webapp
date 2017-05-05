@@ -4,10 +4,10 @@ body {
 }
 
 #register {
-    margin: 0 auto;
+    margin: 100px auto;
     width: 50%;
     text-align: center;
-/*    display: none;*/
+    display: none;
 }
 
 #sign_in {
