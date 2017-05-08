@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/css/admin.css"/>
+        <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
+		<script src="js/admin.js"></script>
+		<link rel="stylesheet" href="/css/navigation.css"/>
+		<link rel="stylesheet" href="/css/footer.css"/>
+		
+        
+	</head>
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+		        <nav id="navigation" class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div id="logo" class="navbar-brand"></div>
+                    <div id="title" class="navbar-brand">Rebel Hangar</div>
+                    
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a id="appetizer_link" href="#appetizers">Appetizers</a></li>
+                        <li><a id="dessert_link" href="#desserts">Desserts</a></li>
+                        <li><a id="drink_link" href="#drinks">Drinks</a></li>
+                        <li><a id="meal_link" href="#meals">Meals</a></li>
+						<li><a id="about_link" href="#about">About Us</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <div id="sign_in_stuff">
+                            <li><a id="profile_link" href="/public/profile.html"><span class="glyphicon glyphicon-log-in"></span> Profile</a></li>
+                            <li id="logout"><a href="/logout" class="reg"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                        </div>
+                        <li id="login"><a href="/signin" class="reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<div id="admin-div" class="container-fluid">
+		<div id="appetizers" class="container-fluid">
+            <div class="text-center">
+                <h2>Appetizers</h2>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+			<div class="row">
+			</div>
+		</div>
+			
+		<div id="desserts" class="container-fluid">
+            <div class="text-center">
+                <h2>Desserts</h2>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        
+        <div id="drinks" class="container-fluid">
+            <div class="text-center">
+                <h2>Drinks</h2>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        
+        <div id="meals" class="container-fluid">
+            <div class="text-center">
+                <h2>Meals</h2>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+			
+		<div id="about" class="container-fluid">
+			 <div class="text-center">
+                <h2>About Us</h2>
+				 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+			<div class="row">		</div>
+	
+		</div>
+		
+		<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Item Creator</h4>
+        </div>
+        <div class="modal-body">
+			<div class="form-group">
+  				<label for="item-name">Item Name:</label>
+  				<input type="text" class="form-control" id="item-name" placeholder="Item Name">
+				<label for="item-cat">Item Categories:(Select one)</label>
+  					<select class="form-control" id="item-cat">
+    					<option>Appetizers</option>
+    					<option>Desserts</option>
+    					<option>Drinks</option>
+    					<option>Meals</option>
+  					</select>
+				<label for="item-desc">Item Description:</label>
+  				<textarea class="form-control" rows="5" id="item-desc"></textarea>
+				<label for="item-price">Item Price:</label>
+  				<input type="number" class="form-control" id="item-price" placeholder="Item Price">
+				<label for="item-image">Item Image:</label>
+				<input type="file" name="item-image">
+				<button type="button" id="image-submit" class="btn btn-primary" >Submit</button>
+				
+			</div>
+		
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-success" data-dismiss="modal">Okay</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+		<button type="button" id="addbut"class="btn icon-btn btn-success" data-toggle="modal" data-target="#myModal" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Add</button>	
+
+		</div>
+		<div id="foot"></div>
+		
+        
+    </body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function(){
+               $('#foot').load('/public/footer.html');
+           });
+        </script>   
+</html>

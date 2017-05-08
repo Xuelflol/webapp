@@ -1,7 +1,23 @@
+/*Fan_change_log
+1. font update
+2. Background image layout
+3. about us image size adjust to screen
+*/
+
 body {
     position: relative;
     background-color: white;
     margin: 0;
+    
+    /*Fan_start---Background image style*/
+    background: url(../images/Hoth_plains.jpg) no-repeat center top fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /*Fan_end---Background image style*/
 }
 
 #cart {
@@ -15,22 +31,27 @@ body {
 
 #appetizers {
     padding: 100px 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #desserts {
     padding: 100px 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #drinks {
     padding: 100px 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #meals {
     padding: 100px 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #about{
 	padding: 100px 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .imgs {
@@ -39,4 +60,17 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/*Fan_start------------------------------------------------*/
+/*fix about us pic size*/
+#imghoth{
+    max-width:100%;
+    max-height:100%;
+}
+
+.menu_icon {
+    
+    height: 150px;
+    width: 150px;
 }

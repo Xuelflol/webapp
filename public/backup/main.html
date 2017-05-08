@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <link rel="stylesheet" href="/css/main.css"/>
+		<link rel="stylesheet" href="/css/footer.css"/>
+        <link rel="stylesheet" href="/css/scrollbar.css"/>
+        <link rel="stylesheet" href="/css/food_item.css"/>
+        <link rel="stylesheet" href="/css/cart.css"/>
+        <link rel="stylesheet" href="/css/navigation.css"/>
+        <link rel="import" href="/other/navbar.html"/>
+        <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+  
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        
+        <nav id="navigation" class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div id="logo" class="navbar-brand"></div>
+                    <div id="title" class="navbar-brand">Rebel Hangar</div>
+                    
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <!--<li><a id="appetizer_link" href="#appetizers">Appetizers</a></li>
+                        <li><a id="dessert_link" href="#desserts">Desserts</a></li>
+                        <li><a id="drink_link" href="#drinks">Drinks</a></li>
+                        <li><a id="meal_link" href="#meals">Meals</a></li>
+						<li><a id="about_link" href="#about">About Us</a></li>
+						-->
+						
+						<li><a id="appetizer_link" class="gradient" href="#appetizers">Appetizers</a></li>
+                        <li><a id="dessert_link" class="gradient" href="#desserts">Desserts</a></li>
+                        <li><a id="drink_link" class="gradient" href="#drinks">Drinks</a></li>
+                        <li><a id="meal_link" class="gradient" href="#meals">Meals</a></li>
+						<li><a id="about_link" class="gradient" href="#about">About Us</a></li>
+			
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <div id="sign_in_stuff">
+                            <li><a id="profile_link" href="/public/profile.html"><span class="glyphicon glyphicon-log-in"></span> Profile</a></li>
+                            <li id="logout"><a href="/logout" class="reg"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                        </div>
+                        <li id="login"><a href="/signin" class="reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="appetizers" class="container-fluid">
+            <div class="text-center">
+                <h2>Appetizers</h2>
+            </div>
+            
+            <!-- 
+            3 food items can fit in one row, otherwise another row will need to be created. This could most likely be done by checking the index number, 
+            if the index number is 3, 6, 9, etc. then create a new row and append the next 3 food items. When you come accross another menu category, reset an 
+            index or something. 
+            -->
+            
+            <div class="row">
+                
+                <!-- Beginning of food item -->
+                <div class="col-sm-4 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>BBQ X-Wings</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="imgs"></div>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>This is a description.</h4>
+                            <h3>$19</h3>
+                            <button class="btn btn-lg">Add To Cart</button>
+                        </div>
+                    </div>      
+                </div>     
+                <!--End of item -->
+                
+            </div>
+            
+        </div>
+        
+        <div id="desserts" class="container-fluid">
+            <div class="text-center">
+                <h2>Desserts</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>BBQ X-Wings</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="imgs"></div>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>This is a description.</h4>
+                            <h3>$19</h3>
+                            <button class="btn btn-lg">Add To Cart</button>
+                        </div>
+                    </div>      
+                </div>    
+            </div>
+        </div>
+        
+        <div id="drinks" class="container-fluid">
+            <div class="text-center">
+                <h2>Drinks</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>BBQ X-Wings</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="imgs"></div>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>This is a description.</h4>
+                            <h3>$19</h3>
+                            <button class="btn btn-lg">Add To Cart</button>
+                        </div>
+                    </div>      
+                </div>    
+            </div>
+        </div>
+        
+        <div id="meals" class="container-fluid">
+            <div class="text-center">
+                <h2>Meals</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>BBQ X-Wings</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="imgs"></div>
+                        </div>
+                        <div class="panel-footer">
+                            <h4>This is a description.</h4>
+                            <h3>$19</h3>
+                            <button class="btn btn-lg">Add To Cart</button>
+                        </div>
+                    </div>      
+                </div>    
+            </div>
+        </div>
+        
+        <div id="about" class="container-fluid">
+			 <div class="text-center">
+                <h2>About Us</h2>
+            </div>
+			<div class="row">
+				<div id="about-left" class="col-lg-8 col-md-8 col-sm-4 col-xs-4">
+					<img id="imghoth" src="/images/hoth-team.jpg" alt="hoth team" />
+					<p>Team Hoth: Alex, Creighton, Fan, Roger, Rui</p>
+				
+				</div>
+				
+				<div id="about-right" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					Echo Base was the settlement established by the Rebel Alliance on the frigid planet of Hoth in the wake of the Battle of Yavin, so named due to its strange acoustics. Less than a month after its establishment, the base was discovered by the Galactic Empire who then invaded Hoth, forcing the Rebels to evacuate.
+					<br>
+					<br>
+					Echo Base was carved out of a glacier and connected by artificial corridors linked together with structural supports, while natural caverns were expanded to suit the Rebel Alliance's needs. It was protected from orbital bombardments with a massive deflector shield generator and v-150 ion cannon, which would help the Alliance evacuate the base in case of an attack. Designed to be evacuated at a moment's notice, the base was hastily constructed and often as not, wampa ice creatures would sneak into the base at night, forcing the closures of various corridors. Owing to slab-dab construction methods, a single faulty element in the base's electrical system could deny heat to half the base. Nevertheless, soldiers of the outpost were better equipped and displayed better discipline than those stationed elsewhere. In its cavernous ice hangars, the base hosted a contingent of speeders, which were specially modified to operate in the harsh conditions and which the Rebels used for patrol and defense of the outpost. As the technicians had trouble adapting their airspeeders to the subzero temperatures of Hoth, the base also held a herd of native tauntaun creatures for the patrols and recon missions
+				
+				</div>	
+				
+			</div>
+		
+		</div>
+		<div id=foot></div>
+        
+        <script src="/scripts/mainbundle.js"></script>
+		 <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript">
+           $(document).ready(function(){
+               $('#foot').load('/public/footer.html');
+           });
+        </script>   
+    </body>
+</html>

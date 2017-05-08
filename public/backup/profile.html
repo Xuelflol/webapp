@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="/css/profile.css"/>
+        <link rel="stylesheet" href="/css/scrollbar.css"/>
+        <link rel="stylesheet" href="/css/navigation.css"/>
+        <link rel="icon" type="image/png" href="/images/Rebel-50.png"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    
+    <body data-offset="50">
+        <div id="nav"></div>
+        <form class="form form-group" id="cEmail" action="/changeEmail" type="post">
+            <div class="input-group">
+                <input type="email" placeholder="EMAIL" name="email" class="form-control inputs">
+                <div class="input-group-btn">
+                    <input type="submit" value="CHANGE" class="buttons btn">
+                </div>
+            </div>
+        </form>
+
+        <form class="form form-group" action="/changePassword" type="post">
+            <div class="input-group">
+                <input type="password" placeholder="PASSWORD" name="password" class="form-control inputs">
+                <div class="input-group-btn">
+                    <input type="submit" value="CHANGE" class="buttons btn">
+                </div>
+            </div>
+        </form>
+
+        <div id="history">
+        </div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("/public/navbar.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+        </script>
+    </body>
+</html>

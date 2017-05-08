@@ -1,3 +1,8 @@
+<!--Fan_change_log
+1. update icon for each page section
+2. fix login page layout
+ -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,7 +25,7 @@
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
     </head>
-    
+  
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
         
         <nav id="navigation" class="navbar navbar-fixed-top">
@@ -38,19 +43,26 @@
 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a id="appetizer_link" href="#appetizers">Appetizers</a></li>
-                        <li><a id="dessert_link" href="#desserts">Desserts</a></li>
-                        <li><a id="drink_link" href="#drinks">Drinks</a></li>
-                        <li><a id="meal_link" href="#meals">Meals</a></li>
-						<li><a id="about_link" href="#about">About Us</a></li>
+
+
+						<li><a id="appetizer_link" href="#appetizers" >Appetizers</a></li>
+                        <li><a id="dessert_link"  href="#desserts">Desserts</a></li>
+                        <li><a id="drink_link"  href="#drinks">Drinks</a></li>
+                        <li><a id="meal_link"  href="#meals">Meals</a></li>
+						<li><a id="about_link"  href="#about">About Us</a></li>
+						
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <div id="sign_in_stuff">
+					
+						<!--Fan_start login/signup, profile and logout move to user login state only -->
+                        <!--
+						<div id="sign_in_stuff">
                             <li><a id="profile_link" href="/public/profile.html"><span class="glyphicon glyphicon-log-in"></span> Profile</a></li>
                             <li id="logout"><a href="/logout" class="reg"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-                        </div>
-                        <li id="login"><a href="/signin" class="reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </div>-->
+                        <li><a id="login" href="/signin" class="reg"><span class="glyphicon glyphicon-log-in"></span> Login | Signup</a></li>
+						<!--Fan_end login/signup -->
                     </ul>
                 </div>
             </div>
@@ -58,7 +70,10 @@
         
         <div id="appetizers" class="container-fluid">
             <div class="text-center">
-                <h2>Appetizers</h2>
+                <p><img id="appetizer_img" class = "menu_icon" src="/images/appetizer.png" /></p>
+                
+                
+                
             </div>
             
             <!-- 
@@ -93,7 +108,7 @@
         
         <div id="desserts" class="container-fluid">
             <div class="text-center">
-                <h2>Desserts</h2>
+                <p><img id="dessert_img" class = "menu_icon" src="/images/dessert.png" /></p>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-xs-12">
@@ -116,7 +131,7 @@
         
         <div id="drinks" class="container-fluid">
             <div class="text-center">
-                <h2>Drinks</h2>
+                <p><img id="drinks_img" class = "menu_icon" src="/images/drinks3.png" /></p>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-xs-12">
@@ -139,7 +154,7 @@
         
         <div id="meals" class="container-fluid">
             <div class="text-center">
-                <h2>Meals</h2>
+                <p><img id="meal_img" class = "menu_icon" src="/images/meal.png" /></p>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-xs-12">
@@ -162,7 +177,7 @@
         
         <div id="about" class="container-fluid">
 			 <div class="text-center">
-                <h2>About Us</h2>
+                <p><img id="aboutus_img" class = "menu_icon" src="/images/aboutus.png" /></p>
             </div>
 			<div class="row">
 				<div id="about-left" class="col-lg-8 col-md-8 col-sm-4 col-xs-4">
